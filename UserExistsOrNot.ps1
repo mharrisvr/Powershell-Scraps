@@ -3,7 +3,7 @@
 
 Import-Module ActiveDirectory
 
-$employeeIDs = @()
+$employeeIDs = @('1','2','3','4','5','6','7','8','9','10')
 
 $Users = foreach ($employeeID in $employeeIDs) {
     $User = Get-ADUser -filter ("EmployeeID -eq $employeeID")
